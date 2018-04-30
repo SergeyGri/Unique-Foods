@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'droid_sansregular';
+  src: url('../fonts/droidsans-webfont.woff2') format('woff2'),
+  url('../fonts/droidsans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'droid_sansbold';
+  src: url('../fonts/droidsans-bold-webfont.woff2') format('woff2'),
+  url('../fonts/droidsans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url('../fonts/robotoslab-regular-webfont.woff2') format('woff2'),
+  url('../fonts/robotoslab-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$main-font: 'droid_sansregular';
+$flex-layout: flex;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.85;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  background: #262c2d;
+  .user-menu-bg {
+    background: #e2e9ea;
+    .container {
+      .user-menu {
+        display: $flex-layout;
+        justify-content: flex-end;
+        li {
+          a {
+            font-family: 'roboto_slabregular';
+            font-size: 12px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 9px 20px 8px;
+            display: block;
+            background: #919e9f;
+            &:first-child {
+              background: #bfc7c8;
+            }
+            &:last-child {
+              background: #00a5e2;
+            }
+            &:nth-child(3) {
+              background: #a7b0b1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-flex-container {
+    display: $flex-layout;
+    justify-content: space-between;
+    height: 100px;
+    .logo {
+      align-self: center;
+    }
+    nav {
+      .nav {
+        display: $flex-layout;
+        justify-content: flex-end;
+        li {
+          display: block;
+          width: 125px;
+          a {
+            color: #fff;
+            font-size: 16px;
+            font-family: 'roboto_slabregular';
+            background: #00a5e2;
+            display: block;
+            position: relative;
+            padding: 20px 15px;
+            height: 100px;
+            &:after {
+              content: "";
+              border-top: 1px dotted #fff;
+              border-left: none;
+              display: block;
+              width: 46px;
+              position: absolute;
+              bottom: 15px;
+              left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
