@@ -46,11 +46,11 @@ ul {
         padding: 9px 20px 8px;
         display: block;
         background: #919e9f; }
-        #header .user-menu-bg .container .user-menu li a:first-child {
+        #header .user-menu-bg .container .user-menu li a:first-of-type {
           background: #bfc7c8; }
-        #header .user-menu-bg .container .user-menu li a:last-child {
+        #header .user-menu-bg .container .user-menu li a:last-of-type {
           background: #00a5e2; }
-        #header .user-menu-bg .container .user-menu li a:nth-child(3) {
+        #header .user-menu-bg .container .user-menu li a:nth-of-type(3) {
           background: #a7b0b1; }
   #header .header-flex-container {
     display: flex;
@@ -82,5 +82,32 @@ ul {
             position: absolute;
             bottom: 15px;
             left: 15px; }
+          #header .header-flex-container nav .nav li a:first-child {
+            background: #bfc7c8; }
+          #header .header-flex-container nav .nav li a:last-child {
+            background: #00a5e2; }
+          #header .header-flex-container nav .nav li a:nth-child(3) {
+            background: #a7b0b1; }
+
+section {
+  background: #f8f8f8;
+  border-bottom: 5px solid #fff; }
+  section .container .banner {
+    padding: 85px 0 0;
+    position: relative; }
+    section .container .banner .banner-text {
+      max-width: 72%; }
+      section .container .banner .banner-text h2 {
+        font-family: 'droid_sansbold';
+        font-size: 24px; }
+      section .container .banner .banner-text p {
+        font-family: "droid_sansregular";
+        font-size: 16px; }
+    section .container .banner .banner-image {
+      width: 100%;
+      margin-top: -115px; }
+      section .container .banner .banner-image img {
+        max-width: 100%;
+        height: auto; }
 
 /*# sourceMappingURL=style.css.map */
