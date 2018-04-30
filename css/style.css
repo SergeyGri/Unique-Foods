@@ -39,7 +39,7 @@ ul {
       display: flex;
       justify-content: flex-end; }
       #header .user-menu-bg .container .user-menu li a {
-        font-family: 'roboto_slabregular';
+        font-family: 'roboto_slabregular',sans-serif;
         font-size: 12px;
         color: #fff;
         text-transform: uppercase;
@@ -67,7 +67,7 @@ ul {
         #header .header-flex-container nav .nav li a {
           color: #fff;
           font-size: 16px;
-          font-family: 'roboto_slabregular';
+          font-family: 'roboto_slabregular',sans-serif;
           background: #00a5e2;
           display: block;
           position: relative;
@@ -98,7 +98,7 @@ section {
     section .container .banner .banner-text {
       max-width: 72%; }
       section .container .banner .banner-text h2 {
-        font-family: 'droid_sansbold';
+        font-family: 'droid_sansbold',sans-serif;
         font-size: 24px; }
       section .container .banner .banner-text p {
         font-family: "droid_sansregular";
@@ -109,5 +109,48 @@ section {
       section .container .banner .banner-image img {
         max-width: 100%;
         height: auto; }
+
+.content {
+  background: #c04248; }
+  .content .container .about-product {
+    display: flex;
+    align-items: stretch; }
+    .content .container .about-product .m-logo-box {
+      width: 240px;
+      background: #fff; }
+      .content .container .about-product .m-logo-box img {
+        display: block;
+        margin: 50px auto; }
+    .content .container .about-product .about-product-text-box {
+      padding: 18px 20px;
+      background: #90202d; }
+      .content .container .about-product .about-product-text-box h3 {
+        font-family: 'droid_sansbold',sans-serif;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 15px; }
+      .content .container .about-product .about-product-text-box p {
+        font-family: "droid_sansregular", sans-serif;
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 20px; }
+  .content .container .product-sets {
+    display: flex; }
+    .content .container .product-sets .product-set-item {
+      background: #fff;
+      flex-basis: 33.333%; }
+      .content .container .product-sets .product-set-item a {
+        display: block; }
+        .content .container .product-sets .product-set-item a .product-set-title {
+          color: #90202d;
+          font-family: 'droid_sansbold', sans-serif;
+          font-size: 22px;
+          text-align: center;
+          padding: 25px 5px 23px;
+          border-bottom: 6px solid #90202d; }
+        .content .container .product-sets .product-set-item a .product-set-image-box {
+          text-align: center;
+          padding: 50px 5px 45px; }
 
 /*# sourceMappingURL=style.css.map */
