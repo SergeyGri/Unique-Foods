@@ -31,6 +31,30 @@ ul {
   max-width: 960px;
   margin: 0 auto; }
 
+.link-button {
+  font-size: 17.3px;
+  line-height: 1.2;
+  font-family: 'droid_sansbold', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  background: #c04248;
+  position: relative;
+  padding: 5px 40px 5px 7px; }
+
+.link-button:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-left-color: #fff;
+  border-width: 5px 0 5px 8px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -5px; }
+
 #header {
   background: #262c2d; }
   #header .user-menu-bg {
@@ -178,61 +202,55 @@ section {
   .content .container .wahlberg-ball {
     display: flex; }
     .content .container .wahlberg-ball .wahlberg-image-box {
-      max-width: 480px; }
+      width: 50%; }
       .content .container .wahlberg-ball .wahlberg-image-box img {
-        width: 100%; }
+        width: 100%;
+        height: 100%; }
     .content .container .wahlberg-ball .wahlberg-text-box {
       background: #90202d;
-      padding: 40px; }
+      padding: 40px;
+      width: 50%; }
       .content .container .wahlberg-ball .wahlberg-text-box .wahlberg-title {
         font-size: 50px;
         font-family: 'droid_sansbold', sans-serif;
         line-height: 50px;
         color: #fff;
-        text-transform: uppercase; }
-      .content .container .wahlberg-ball .wahlberg-text-box a {
-        font-size: 17.3px;
-        font-family: 'droid_sansbold', sans-serif;
-        color: #fff;
         text-transform: uppercase;
-        display: inline-block;
-        background: #c04248; }
+        margin-bottom: 40px; }
+      .content .container .wahlberg-ball .wahlberg-text-box p {
+        margin-bottom: 15px; }
 
-.widget-container {
-  position: relative; }
-  .widget-container .widgets {
+#footer {
+  background: #fff; }
+  #footer .container .widgets {
     display: flex;
-    position: absolute;
-    top: -140px;
-    display: none; }
-    .widget-container .widgets .widget {
+    margin-top: -140px;
+    float: left; }
+    #footer .container .widgets .widget {
       width: 320px;
       background: #f5f5f5; }
-      .widget-container .widgets .widget:first-child {
+      #footer .container .widgets .widget:first-child {
         background: #ebebeb; }
-      .widget-container .widgets .widget:last-child {
+      #footer .container .widgets .widget:last-child {
         background: #fff; }
-      .widget-container .widgets .widget .twitter-widget-title, .widget-container .widgets .widget .facebook-widget-title, .widget-container .widgets .widget .instagram-widget-title {
+      #footer .container .widgets .widget .twitter-widget-title, #footer .container .widgets .widget .facebook-widget-title, #footer .container .widgets .widget .instagram-widget-title {
         font-family: 'droid_sansbold', sans-serif;
         padding: 16px 10px 12px;
         font-size: 16px;
         background: #00aeef;
         color: #fff; }
-      .widget-container .widgets .widget .facebook-widget-title {
+      #footer .container .widgets .widget .facebook-widget-title {
         background: #2f5b96; }
-      .widget-container .widgets .widget .instagram-widget-title {
+      #footer .container .widgets .widget .instagram-widget-title {
         background: #437197; }
-      .widget-container .widgets .widget .widget-wrap {
+      #footer .container .widgets .widget .widget-wrap {
         margin: 10px; }
-
-#footer {
-  background: #fff;
-  position: relative; }
   #footer .container .footer-bottom {
     background: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    clear: both; }
     #footer .container .footer-bottom .copyright, #footer .container .footer-bottom .cyber-relief span {
       font-family: 'roboto_slabregular', sans-serif;
       font-size: 10px;
